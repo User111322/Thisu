@@ -1,0 +1,174 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5e6; /* A warm, soft beige background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navbar styles */
+.navbody {
+    width: 100%; /* Full width */
+    background-color: #b71d7e;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 80%; /* Centered and limited width */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px; /* Larger font size */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #FFD700; /* Gold hover effect */
+}
+
+/* Main heading styles */
+.main_heading {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 4.5em; /* Larger heading size */
+    color: #4CAF50; /* Matching navbar theme */
+    text-shadow: 3px 3px #FFD700; /* Soft glow effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image container styles */
+.main_img {
+    max-width: 800px; /* Larger image size */
+    height: auto;
+    margin: 40px auto;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    display: flex; /* Flexbox for centering */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Paragraph container styles */
+.index_para {
+    margin: 30px auto;
+    padding: 40px; /* Generous padding */
+    max-width: 850px; /* Wider paragraph container */
+    font-size: 2.2em; /* Bigger font size */
+    background-color: #fff;
+    border: 4px solid #FFD700; /* Thicker border */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    line-height: 2.2; /* Comfortable line spacing */
+    color: #555;
+    display: flex; /* Flexbox applied */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Button container styles */
+button {
+    margin: 30px auto;
+    padding: 25px 50px; /* Larger button size */
+    font-size: 1.8em; /* Bigger text for button */
+    font-weight: bold;
+    color: white;
+    background-color: #FF69B4; /* Playful pink button */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex; /* Flexbox for alignment */
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #FF1493; /* Slightly darker pink on hover */
+    transform: scale(1.15); /* Subtle scaling effect */
+}
+
+/* Memories link container */
+div:nth-last-child(2) {
+    text-align: center;
+    font-size: 2em; /* Bigger font size */
+    margin-top: 30px;
+    color: #333;
+    display: flex; /* Flexbox applied */
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul li {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+ul li::marker {
+    color: #FF69B4; /* Pink bullet points */
+}
+
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%; /* Scale down overall text size */
+    }
+
+    .navbar a {
+        font-size: 20px; /* Smaller font size for navbar links */
+    }
+
+    .main_heading {
+        font-size: 3em; /* Adjusted heading size */
+    }
+
+    .index_para {
+        font-size: 1.5em; /* Adjusted paragraph size */
+    }
+
+    button {
+        font-size: 1.4em; /* Adjusted button size */
+    }
+
+    ul li {
+        font-size: 1em; /* Adjusted list item size */
+    }
+
+    .main_img {
+        max-width: 100%; /* Use full width for small screens */
+        margin: 20px auto; /* Reduce margin for smaller screens */
+        border-radius: 10px; /* Slightly smaller rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+    }
+}
